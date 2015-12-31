@@ -45,3 +45,10 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  # To enable features such as static asset serving and logging on Heroku
+  gem 'rails_12factor'
+end
+
+# Specify an exact version for Heroku
+ruby "2.2.1"
