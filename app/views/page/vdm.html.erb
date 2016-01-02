@@ -1,5 +1,5 @@
 <ol>
-  <% @vdm.each do |vdm| %>
-    <li><%= vdm.css('p').first.text %></li>
+  <% Post.all.each do |vdm| %>
+    <li><%= vdm.content %> | <%= vdm.date %> | <%= vdm.author %></li>
   <% end %>
 </ol>
