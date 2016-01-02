@@ -4,7 +4,12 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'page#index'
+
+  # To have a preview of the command
   get 'vdm' => 'page#vdm'
+
+  # To create our API
+  mount Vdm::Base => '/'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -11,6 +11,8 @@ namespace :vdm do
 
     # First of all empty the database
     Post.delete_all
+    # Reset the ID of the database
+    ActiveRecord::Base.connection.reset_pk_sequence!(Post)
     # The number of records
     count = 0
 
