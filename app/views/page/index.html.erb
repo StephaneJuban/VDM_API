@@ -4,7 +4,20 @@
 You can get the last X posts from VDM with this simple command line :<br />
 <i>rake vdm:get_posts NB_OF_VDM_TO_GET=200</i><br /><br />
 
-Or you can go to <%= link_to "#{request.base_url}/vdm", vdm_path, :id => "link" %> to get a preview of the result (this will execute the command).
+Or you can go to <%= link_to "#{request.base_url}/vdm", vdm_path, :id => "link" %> to get a preview of the result (this will execute the command).<br /><br />
+
+
+<h2>Use the API</h2>
+Please visit the API at <%= link_to @url_all, @url_all %><br />
+This will give you all the posts in JSON. You can use optionals parameters (from, to, author).<br /><br />
+
+<ul>
+  <li>Get all the posts : <%= link_to @url_all, @url_all %></li>
+  <li>Get all the posts from Anonyme : <%= link_to @url_author, @url_author %></li>
+  <li>Get all the posts from/to a date : <%= link_to @url_date, @url_date %></li>
+  <li>Get all the posts from Anonyme between two dates : <%= link_to @url_full, @url_full %></li>
+</ul>
+
 
 
 <script>
