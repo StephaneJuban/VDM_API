@@ -1,11 +1,26 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  content: MyString
-  date: 2016-01-02 09:15:12
-  author: MyString
+  content: MyString VDM
+  date: <%= 3.days.ago %>
+  author: Anonyme
 
 two:
-  content: MyString
-  date: 2016-01-02 09:15:12
-  author: MyString
+  content: MyString VDM
+  date: <%= 2.days.ago %>
+  author: Robert
+
+three:
+  content: MyString VDM
+  date: <%= 2.days.ago %>
+  author: Anonyme
+
+four:
+  content: MyString VDM
+  date: <%= 10.days.ago %>
+  author: Giselle
+
+five:
+  content: MyString VDM
+  date: <%= Date.today %>
+  author: Giselle

@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
+  validates_presence_of :content, :date, :author
 
   # Filter the result according to the parameters
   def self.filter(attributes)
