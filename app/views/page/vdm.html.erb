@@ -1,0 +1,5 @@
+<ol>
+  <% @vdm.each do |vdm| %>
+    <li><%= vdm.css('p').first.text %></li>
+  <% end %>
+</ol>
