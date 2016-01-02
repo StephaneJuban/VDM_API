@@ -1,1 +1,16 @@
 <h1>This is my iAdvize Backend challenge</h1>
+
+<h2>Get the posts</h2>
+You can get the last X posts from VDM with this simple command line :<br />
+<i>rake vdm:get_posts NB_OF_VDM_TO_GET=200</i><br /><br />
+
+Or you can go to <%= link_to "#{request.base_url}/vdm", vdm_path, :id => "link" %> to get a preview of the result (this will execute the command).
+
+
+<script>
+  $(document).ready(function () {
+    $('#link').click(function() {
+      this.innerHTML = 'Wait for it...';
+    });
+  });
+</script>
