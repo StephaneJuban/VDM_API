@@ -1,4 +1,4 @@
-iAdvize Backend challenge
+VDM API Challenge
 ==================
 
 This application let you fetch the last 200 records from [VDM website](http://viedemerde.fr) and store them into the database.
